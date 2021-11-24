@@ -1,5 +1,5 @@
 const yargs = require('yargs');
-const { addNote } = require('./notes');
+const { addNote, delNote } = require('./notes');
 
 yargs.command({
   command: 'add',
@@ -17,5 +17,22 @@ yargs.command({
     addNote(args.title, args.body);
   }
 })
+
+yargs.command(
+  {
+    command: 'remove',
+    describe: 'Remove anyone note',
+    builder: {
+      title: {
+        describe: 'title of a note',
+        demandOption: true
+      }
+    },
+    handler: function (args) {
+      delNote(args.title);
+    }
+  }
+  
+)
 
 yargs.parse();
