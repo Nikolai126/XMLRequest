@@ -1,0 +1,24 @@
+{
+  "name": "yargs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ../notes-app/app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "yargs": "^17.2.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZuevR/parse-node-commands.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ZuevR/parse-node-commands/issues"
+  },
+  "homepage": "https://github.com/ZuevR/parse-node-commands#readme",
+  "devDependencies": {},
+  "description": ""
+}
